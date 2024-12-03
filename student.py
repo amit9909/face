@@ -91,7 +91,7 @@ class Student:
         
         #department 
         dep_label=Label(current_course_frame,text="Department",font=("times new roman",12,"bold"),bg="white")
-        dep_label.grid(row=0,column=0,padx=10)   
+        dep_label.grid(row=0,column=0,padx=10,sticky=W)   
         
         dep_combo=ttk.Combobox(current_course_frame,textvariable=self.var_department,font=("times new roman",12,"bold"),state="read only")
         dep_combo["values"]=("Select Department","Computer Science","IT","Civil","Mechanical")

@@ -70,15 +70,15 @@ class Face_Recognition:
 
                 my_cursor.execute("SELECT Name FROM student WHERE Student_id=" + str(id))
                 n = my_cursor.fetchone()
-                n = n[0] if n else "Unknown"  # Handle if no data is returned
+                n = n[0] if n else "Unknown"  
 
                 my_cursor.execute("SELECT Roll FROM student WHERE Student_id=" + str(id))
                 r = my_cursor.fetchone()
-                r = r[0] if r else "Unknown"  # Handle if no data is returned
+                r = r[0] if r else "Unknown" 
 
                 my_cursor.execute("SELECT Department FROM student WHERE Student_id=" + str(id))
                 d = my_cursor.fetchone()
-                d = d[0] if d else "Unknown"  # Handle if no data is returned
+                d = d[0] if d else "Unknown" 
 
                 my_cursor.execute("SELECT Student_id FROM student WHERE Student_id=" + str(id))
                 i = my_cursor.fetchone()
